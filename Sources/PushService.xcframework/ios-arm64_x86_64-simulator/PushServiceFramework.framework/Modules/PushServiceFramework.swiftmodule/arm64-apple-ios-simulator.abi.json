@@ -1,0 +1,4486 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Network",
+        "printedName": "Network",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Network",
+                "printedName": "PushServiceFramework.Network<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:20PushServiceFramework7NetworkC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20PushServiceFramework7NetworkCACyxGycfc",
+            "mangledName": "$s20PushServiceFramework7NetworkCACyxGycfc",
+            "moduleName": "PushServiceFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+            "sugared_genericSig": "<R where R : PushServiceFramework.Service>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(service:session:queue:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkingSession",
+                "printedName": "PushServiceFramework.NetworkingSession",
+                "hasDefaultArg": true,
+                "usr": "s:20PushServiceFramework17NetworkingSessionP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<PushServiceFramework.Response, PushServiceFramework.NetworkingError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<PushServiceFramework.Response, PushServiceFramework.NetworkingError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "PushServiceFramework.Response",
+                        "usr": "s:20PushServiceFramework8ResponseC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework7NetworkC7request7service7session5queue10completionSo20NSURLSessionDataTaskCx_AA17NetworkingSession_pSo012OS_dispatch_H0Cys6ResultOyAA8ResponseCAA0M5ErrorOGctF",
+            "mangledName": "$s20PushServiceFramework7NetworkC7request7service7session5queue10completionSo20NSURLSessionDataTaskCx_AA17NetworkingSession_pSo012OS_dispatch_H0Cys6ResultOyAA8ResponseCAA0M5ErrorOGctF",
+            "moduleName": "PushServiceFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+            "sugared_genericSig": "<R where R : PushServiceFramework.Service>",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20PushServiceFramework7NetworkC",
+        "mangledName": "$s20PushServiceFramework7NetworkC",
+        "moduleName": "PushServiceFramework",
+        "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+        "sugared_genericSig": "<R where R : PushServiceFramework.Service>",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NetworkingType",
+            "printedName": "NetworkingType",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Service",
+                "printedName": "Service",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:20PushServiceFramework14NetworkingTypeP",
+            "mangledName": "$s20PushServiceFramework14NetworkingTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkingError",
+        "printedName": "NetworkingError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "noData",
+            "printedName": "noData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.NetworkingError.Type) -> (PushServiceFramework.Response) -> PushServiceFramework.NetworkingError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PushServiceFramework.Response) -> PushServiceFramework.NetworkingError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "PushServiceFramework.Response",
+                        "usr": "s:20PushServiceFramework8ResponseC"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.NetworkingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework15NetworkingErrorO6noDatayAcA8ResponseCcACmF",
+            "mangledName": "$s20PushServiceFramework15NetworkingErrorO6noDatayAcA8ResponseCcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "statusCode",
+            "printedName": "statusCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.NetworkingError.Type) -> (PushServiceFramework.Response) -> PushServiceFramework.NetworkingError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PushServiceFramework.Response) -> PushServiceFramework.NetworkingError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "PushServiceFramework.Response",
+                        "usr": "s:20PushServiceFramework8ResponseC"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.NetworkingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework15NetworkingErrorO10statusCodeyAcA8ResponseCcACmF",
+            "mangledName": "$s20PushServiceFramework15NetworkingErrorO10statusCodeyAcA8ResponseCcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "decoding",
+            "printedName": "decoding",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.NetworkingError.Type) -> (Swift.Error, PushServiceFramework.Response) -> PushServiceFramework.NetworkingError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error, PushServiceFramework.Response) -> PushServiceFramework.NetworkingError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Error, PushServiceFramework.Response)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Response",
+                            "printedName": "PushServiceFramework.Response",
+                            "usr": "s:20PushServiceFramework8ResponseC"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.NetworkingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework15NetworkingErrorO8decodingyACs0E0_p_AA8ResponseCtcACmF",
+            "mangledName": "$s20PushServiceFramework15NetworkingErrorO8decodingyACs0E0_p_AA8ResponseCtcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "underlying",
+            "printedName": "underlying",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.NetworkingError.Type) -> (Swift.Error, PushServiceFramework.Response?) -> PushServiceFramework.NetworkingError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error, PushServiceFramework.Response?) -> PushServiceFramework.NetworkingError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Error, PushServiceFramework.Response?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "PushServiceFramework.Response?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Response",
+                                "printedName": "PushServiceFramework.Response",
+                                "usr": "s:20PushServiceFramework8ResponseC"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.NetworkingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework15NetworkingErrorO10underlyingyACs0E0_p_AA8ResponseCSgtcACmF",
+            "mangledName": "$s20PushServiceFramework15NetworkingErrorO10underlyingyACs0E0_p_AA8ResponseCSgtcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "response",
+            "printedName": "response",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PushServiceFramework.Response?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Response",
+                    "printedName": "PushServiceFramework.Response",
+                    "usr": "s:20PushServiceFramework8ResponseC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework15NetworkingErrorO8responseAA8ResponseCSgvp",
+            "mangledName": "$s20PushServiceFramework15NetworkingErrorO8responseAA8ResponseCSgvp",
+            "moduleName": "PushServiceFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PushServiceFramework.Response?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "PushServiceFramework.Response",
+                        "usr": "s:20PushServiceFramework8ResponseC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework15NetworkingErrorO8responseAA8ResponseCSgvg",
+                "mangledName": "$s20PushServiceFramework15NetworkingErrorO8responseAA8ResponseCSgvg",
+                "moduleName": "PushServiceFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework15NetworkingErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s20PushServiceFramework15NetworkingErrorO16errorDescriptionSSSgvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework15NetworkingErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s20PushServiceFramework15NetworkingErrorO16errorDescriptionSSSgvg",
+                "moduleName": "PushServiceFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20PushServiceFramework15NetworkingErrorO",
+        "mangledName": "$s20PushServiceFramework15NetworkingErrorO",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Endpoint",
+        "printedName": "Endpoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Endpoint.Type) -> (Swift.String) -> PushServiceFramework.Endpoint",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PushServiceFramework.Endpoint",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(path: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.Endpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework8EndpointO3getyACSS_tcACmF",
+            "mangledName": "$s20PushServiceFramework8EndpointO3getyACSS_tcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Endpoint.Type) -> (Swift.String) -> PushServiceFramework.Endpoint",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PushServiceFramework.Endpoint",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(path: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.Endpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework8EndpointO4postyACSS_tcACmF",
+            "mangledName": "$s20PushServiceFramework8EndpointO4postyACSS_tcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "put",
+            "printedName": "put",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Endpoint.Type) -> (Swift.String) -> PushServiceFramework.Endpoint",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PushServiceFramework.Endpoint",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(path: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.Endpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework8EndpointO3putyACSS_tcACmF",
+            "mangledName": "$s20PushServiceFramework8EndpointO3putyACSS_tcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "delete",
+            "printedName": "delete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Endpoint.Type) -> (Swift.String) -> PushServiceFramework.Endpoint",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PushServiceFramework.Endpoint",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(path: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.Endpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Endpoint",
+                        "printedName": "PushServiceFramework.Endpoint",
+                        "usr": "s:20PushServiceFramework8EndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework8EndpointO6deleteyACSS_tcACmF",
+            "mangledName": "$s20PushServiceFramework8EndpointO6deleteyACSS_tcACmF",
+            "moduleName": "PushServiceFramework"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20PushServiceFramework8EndpointO",
+        "mangledName": "$s20PushServiceFramework8EndpointO",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Response",
+        "printedName": "Response",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "urlRequest",
+            "printedName": "urlRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework8ResponseC10urlRequest10Foundation10URLRequestVvp",
+            "mangledName": "$s20PushServiceFramework8ResponseC10urlRequest10Foundation10URLRequestVvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework8ResponseC10urlRequest10Foundation10URLRequestVvg",
+                "mangledName": "$s20PushServiceFramework8ResponseC10urlRequest10Foundation10URLRequestVvg",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework8ResponseC4data10Foundation4DataVSgvp",
+            "mangledName": "$s20PushServiceFramework8ResponseC4data10Foundation4DataVSgvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework8ResponseC4data10Foundation4DataVSgvg",
+                "mangledName": "$s20PushServiceFramework8ResponseC4data10Foundation4DataVSgvg",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpURLResponse",
+            "printedName": "httpURLResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.HTTPURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework8ResponseC15httpURLResponseSo17NSHTTPURLResponseCSgvp",
+            "mangledName": "$s20PushServiceFramework8ResponseC15httpURLResponseSo17NSHTTPURLResponseCSgvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.HTTPURLResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPURLResponse",
+                        "printedName": "Foundation.HTTPURLResponse",
+                        "usr": "c:objc(cs)NSHTTPURLResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework8ResponseC15httpURLResponseSo17NSHTTPURLResponseCSgvg",
+                "mangledName": "$s20PushServiceFramework8ResponseC15httpURLResponseSo17NSHTTPURLResponseCSgvg",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework8ResponseC11descriptionSSvp",
+            "mangledName": "$s20PushServiceFramework8ResponseC11descriptionSSvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework8ResponseC11descriptionSSvg",
+                "mangledName": "$s20PushServiceFramework8ResponseC11descriptionSSvg",
+                "moduleName": "PushServiceFramework",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(urlRequest:data:httpURLResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Response",
+                "printedName": "PushServiceFramework.Response",
+                "usr": "s:20PushServiceFramework8ResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.HTTPURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20PushServiceFramework8ResponseC10urlRequest4data15httpURLResponseAC10Foundation10URLRequestV_AG4DataVSgSo17NSHTTPURLResponseCSgtcfc",
+            "mangledName": "$s20PushServiceFramework8ResponseC10urlRequest4data15httpURLResponseAC10Foundation10URLRequestV_AG4DataVSgSo17NSHTTPURLResponseCSgtcfc",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework8ResponseC16debugDescriptionSSvp",
+            "mangledName": "$s20PushServiceFramework8ResponseC16debugDescriptionSSvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework8ResponseC16debugDescriptionSSvg",
+                "mangledName": "$s20PushServiceFramework8ResponseC16debugDescriptionSSvg",
+                "moduleName": "PushServiceFramework",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prettyJSONString",
+            "printedName": "prettyJSONString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSString?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework8ResponseC16prettyJSONStringSo8NSStringCSgvp",
+            "mangledName": "$s20PushServiceFramework8ResponseC16prettyJSONStringSo8NSStringCSgvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSString?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSString",
+                        "printedName": "Foundation.NSString",
+                        "usr": "c:objc(cs)NSString"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework8ResponseC16prettyJSONStringSo8NSStringCSgvg",
+                "mangledName": "$s20PushServiceFramework8ResponseC16prettyJSONStringSo8NSStringCSgvg",
+                "moduleName": "PushServiceFramework",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "json",
+            "printedName": "json",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework8ResponseC4jsonypSgvp",
+            "mangledName": "$s20PushServiceFramework8ResponseC4jsonypSgvp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework8ResponseC4jsonypSgvg",
+                "mangledName": "$s20PushServiceFramework8ResponseC4jsonypSgvg",
+                "moduleName": "PushServiceFramework",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "map",
+            "printedName": "map(to:decoder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation11JSONDecoderC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework8ResponseC3map2to7decoderxxm_10Foundation11JSONDecoderCtKSeRzlF",
+            "mangledName": "$s20PushServiceFramework8ResponseC3map2to7decoderxxm_10Foundation11JSONDecoderCtKSeRzlF",
+            "moduleName": "PushServiceFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<D where D : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20PushServiceFramework8ResponseC",
+        "mangledName": "$s20PushServiceFramework8ResponseC",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkingSession",
+        "printedName": "NetworkingSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadData",
+            "printedName": "loadData(with:queue:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Response, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PushServiceFramework.Response, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "PushServiceFramework.Response",
+                        "usr": "s:20PushServiceFramework8ResponseC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework17NetworkingSessionP8loadData4with5queue17completionHandlerSo012NSURLSessionG4TaskC10Foundation10URLRequestV_So012OS_dispatch_I0CyAA8ResponseC_s5Error_pSgtctF",
+            "mangledName": "$s20PushServiceFramework17NetworkingSessionP8loadData4with5queue17completionHandlerSo012NSURLSessionG4TaskC10Foundation10URLRequestV_So012OS_dispatch_I0CyAA8ResponseC_s5Error_pSgtctF",
+            "moduleName": "PushServiceFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.NetworkingSession>",
+            "sugared_genericSig": "<Self where Self : PushServiceFramework.NetworkingSession>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20PushServiceFramework17NetworkingSessionP",
+        "mangledName": "$s20PushServiceFramework17NetworkingSessionP",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Service",
+        "printedName": "Service",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework0B0P7baseURL10Foundation0E0Vvp",
+            "mangledName": "$s20PushServiceFramework0B0P7baseURL10Foundation0E0Vvp",
+            "moduleName": "PushServiceFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework0B0P7baseURL10Foundation0E0Vvg",
+                "mangledName": "$s20PushServiceFramework0B0P7baseURL10Foundation0E0Vvg",
+                "moduleName": "PushServiceFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+                "sugared_genericSig": "<Self where Self : PushServiceFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endpoint",
+            "printedName": "endpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "PushServiceFramework.Endpoint",
+                "usr": "s:20PushServiceFramework8EndpointO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework0B0P8endpointAA8EndpointOvp",
+            "mangledName": "$s20PushServiceFramework0B0P8endpointAA8EndpointOvp",
+            "moduleName": "PushServiceFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Endpoint",
+                    "printedName": "PushServiceFramework.Endpoint",
+                    "usr": "s:20PushServiceFramework8EndpointO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework0B0P8endpointAA8EndpointOvg",
+                "mangledName": "$s20PushServiceFramework0B0P8endpointAA8EndpointOvg",
+                "moduleName": "PushServiceFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+                "sugared_genericSig": "<Self where Self : PushServiceFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "task",
+            "printedName": "task",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "PushServiceFramework.Task",
+                "usr": "s:20PushServiceFramework4TaskO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework0B0P4taskAA4TaskOvp",
+            "mangledName": "$s20PushServiceFramework0B0P4taskAA4TaskOvp",
+            "moduleName": "PushServiceFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Task",
+                    "printedName": "PushServiceFramework.Task",
+                    "usr": "s:20PushServiceFramework4TaskO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework0B0P4taskAA4TaskOvg",
+                "mangledName": "$s20PushServiceFramework0B0P4taskAA4TaskOvg",
+                "moduleName": "PushServiceFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+                "sugared_genericSig": "<Self where Self : PushServiceFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework0B0P7headersSDyS2SGvp",
+            "mangledName": "$s20PushServiceFramework0B0P7headersSDyS2SGvp",
+            "moduleName": "PushServiceFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework0B0P7headersSDyS2SGvg",
+                "mangledName": "$s20PushServiceFramework0B0P7headersSDyS2SGvg",
+                "moduleName": "PushServiceFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+                "sugared_genericSig": "<Self where Self : PushServiceFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cachePolicy",
+            "printedName": "cachePolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CachePolicy",
+                "printedName": "Foundation.NSURLRequest.CachePolicy",
+                "usr": "c:@E@NSURLRequestCachePolicy"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework0B0P11cachePolicySo017NSURLRequestCacheE0Vvp",
+            "mangledName": "$s20PushServiceFramework0B0P11cachePolicySo017NSURLRequestCacheE0Vvp",
+            "moduleName": "PushServiceFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachePolicy",
+                    "printedName": "Foundation.NSURLRequest.CachePolicy",
+                    "usr": "c:@E@NSURLRequestCachePolicy"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework0B0P11cachePolicySo017NSURLRequestCacheE0Vvg",
+                "mangledName": "$s20PushServiceFramework0B0P11cachePolicySo017NSURLRequestCacheE0Vvg",
+                "moduleName": "PushServiceFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.Service>",
+                "sugared_genericSig": "<Self where Self : PushServiceFramework.Service>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20PushServiceFramework0B0P",
+        "mangledName": "$s20PushServiceFramework0B0P",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Firebase",
+        "printedName": "Firebase",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseMessaging",
+        "printedName": "FirebaseMessaging",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushServices",
+        "printedName": "PushServices",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "inital",
+            "printedName": "inital(appId:apiKey:_clientVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC6inital5appId6apiKey14_clientVersionySS_S2StFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC6inital5appId6apiKey14_clientVersionySS_S2StFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateVersion",
+            "printedName": "updateVersion(version:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC13updateVersion7versionySS_tFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC13updateVersion7versionySS_tFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUserId",
+            "printedName": "updateUserId(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC12updateUserId04userG0ySS_tFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC12updateUserId04userG0ySS_tFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disable",
+            "printedName": "disable(disable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC7disableADySb_tFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC7disableADySb_tFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateToken",
+            "printedName": "updateToken(token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC11updateToken5tokeny10Foundation4DataV_tFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC11updateToken5tokeny10Foundation4DataV_tFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "errorToken",
+            "printedName": "errorToken(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC10errorToken0E0ySS_tFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC10errorToken0E0ySS_tFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC6logoutyyFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC6logoutyyFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendDevlivery",
+            "printedName": "sendDevlivery(messageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework0A8ServicesC13sendDevlivery9messageIdySS_tFZ",
+            "mangledName": "$s20PushServiceFramework0A8ServicesC13sendDevlivery9messageIdySS_tFZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20PushServiceFramework0A8ServicesC",
+        "mangledName": "$s20PushServiceFramework0A8ServicesC",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkingType",
+        "printedName": "NetworkingType",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "Service",
+            "printedName": "Service",
+            "declKind": "AssociatedType",
+            "usr": "s:20PushServiceFramework14NetworkingTypeP0B0Qa",
+            "mangledName": "$s20PushServiceFramework14NetworkingTypeP0B0Qa",
+            "moduleName": "PushServiceFramework",
+            "protocolReq": true
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(service:session:queue:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Service"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkingSession",
+                "printedName": "PushServiceFramework.NetworkingSession",
+                "usr": "s:20PushServiceFramework17NetworkingSessionP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<PushServiceFramework.Response, PushServiceFramework.NetworkingError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<PushServiceFramework.Response, PushServiceFramework.NetworkingError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "PushServiceFramework.Response",
+                        "usr": "s:20PushServiceFramework8ResponseC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkingError",
+                        "printedName": "PushServiceFramework.NetworkingError",
+                        "usr": "s:20PushServiceFramework15NetworkingErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework14NetworkingTypeP7request7service7session5queue10completionSo20NSURLSessionDataTaskC0B0Qz_AA0D7Session_pSo012OS_dispatch_I0Cys6ResultOyAA8ResponseCAA0D5ErrorOGctF",
+            "mangledName": "$s20PushServiceFramework14NetworkingTypeP7request7service7session5queue10completionSo20NSURLSessionDataTaskC0B0Qz_AA0D7Session_pSo012OS_dispatch_I0Cys6ResultOyAA8ResponseCAA0D5ErrorOGctF",
+            "moduleName": "PushServiceFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : PushServiceFramework.NetworkingType>",
+            "sugared_genericSig": "<Self where Self : PushServiceFramework.NetworkingType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20PushServiceFramework14NetworkingTypeP",
+        "mangledName": "$s20PushServiceFramework14NetworkingTypeP",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Task",
+        "printedName": "Task",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "requestWithParameters",
+            "printedName": "requestWithParameters",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Task.Type) -> ([Swift.String : Any], PushServiceFramework.URLEncoding) -> PushServiceFramework.Task",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any], PushServiceFramework.URLEncoding) -> PushServiceFramework.Task",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Task",
+                        "printedName": "PushServiceFramework.Task",
+                        "usr": "s:20PushServiceFramework4TaskO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([Swift.String : Any], encoding: PushServiceFramework.URLEncoding)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLEncoding",
+                            "printedName": "PushServiceFramework.URLEncoding",
+                            "usr": "s:20PushServiceFramework11URLEncodingV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.Task.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Task",
+                        "printedName": "PushServiceFramework.Task",
+                        "usr": "s:20PushServiceFramework4TaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework4TaskO21requestWithParametersyACSDySSypG_AA11URLEncodingVtcACmF",
+            "mangledName": "$s20PushServiceFramework4TaskO21requestWithParametersyACSDySSypG_AA11URLEncodingVtcACmF",
+            "moduleName": "PushServiceFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "requestWithEncodable",
+            "printedName": "requestWithEncodable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Task.Type) -> (Swift.Encodable) -> PushServiceFramework.Task",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Encodable) -> PushServiceFramework.Task",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Task",
+                        "printedName": "PushServiceFramework.Task",
+                        "usr": "s:20PushServiceFramework4TaskO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PushServiceFramework.Task.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Task",
+                        "printedName": "PushServiceFramework.Task",
+                        "usr": "s:20PushServiceFramework4TaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20PushServiceFramework4TaskO20requestWithEncodableyACSE_pcACmF",
+            "mangledName": "$s20PushServiceFramework4TaskO20requestWithEncodableyACSE_pcACmF",
+            "moduleName": "PushServiceFramework"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20PushServiceFramework4TaskO",
+        "mangledName": "$s20PushServiceFramework4TaskO",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLEncoding",
+        "printedName": "URLEncoding",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "ArrayEncoding",
+            "printedName": "ArrayEncoding",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "brackets",
+                "printedName": "brackets",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PushServiceFramework.URLEncoding.ArrayEncoding.Type) -> PushServiceFramework.URLEncoding.ArrayEncoding",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ArrayEncoding",
+                        "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                        "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ArrayEncoding",
+                            "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                            "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO8bracketsyA2EmF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO8bracketsyA2EmF",
+                "moduleName": "PushServiceFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "noBrackets",
+                "printedName": "noBrackets",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PushServiceFramework.URLEncoding.ArrayEncoding.Type) -> PushServiceFramework.URLEncoding.ArrayEncoding",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ArrayEncoding",
+                        "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                        "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ArrayEncoding",
+                            "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                            "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO10noBracketsyA2EmF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO10noBracketsyA2EmF",
+                "moduleName": "PushServiceFramework"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(key:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO6encode3keyS2S_tF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO6encode3keyS2S_tF",
+                "moduleName": "PushServiceFramework",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArrayEncoding",
+                    "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                    "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArrayEncoding",
+                    "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                    "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO2eeoiySbAE_AEtFZ",
+                "moduleName": "PushServiceFramework",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO9hashValueSivp",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO9hashValueSivp",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO9hashValueSivg",
+                    "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO9hashValueSivg",
+                    "moduleName": "PushServiceFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO4hash4intoys6HasherVz_tF",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO",
+            "mangledName": "$s20PushServiceFramework11URLEncodingV13ArrayEncodingO",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "BoolEncoding",
+            "printedName": "BoolEncoding",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "numeric",
+                "printedName": "numeric",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PushServiceFramework.URLEncoding.BoolEncoding.Type) -> PushServiceFramework.URLEncoding.BoolEncoding",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoolEncoding",
+                        "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                        "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PushServiceFramework.URLEncoding.BoolEncoding.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BoolEncoding",
+                            "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                            "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO7numericyA2EmF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO7numericyA2EmF",
+                "moduleName": "PushServiceFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "literal",
+                "printedName": "literal",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PushServiceFramework.URLEncoding.BoolEncoding.Type) -> PushServiceFramework.URLEncoding.BoolEncoding",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoolEncoding",
+                        "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                        "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PushServiceFramework.URLEncoding.BoolEncoding.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BoolEncoding",
+                            "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                            "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO7literalyA2EmF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO7literalyA2EmF",
+                "moduleName": "PushServiceFramework"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(flag:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO6encode4flagSSSb_tF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO6encode4flagSSSb_tF",
+                "moduleName": "PushServiceFramework",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoolEncoding",
+                    "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                    "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoolEncoding",
+                    "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                    "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO2eeoiySbAE_AEtFZ",
+                "moduleName": "PushServiceFramework",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO9hashValueSivp",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO9hashValueSivp",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO9hashValueSivg",
+                    "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO9hashValueSivg",
+                    "moduleName": "PushServiceFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO4hash4intoys6HasherVz_tF",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO",
+            "mangledName": "$s20PushServiceFramework11URLEncodingV12BoolEncodingO",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrayEncoding",
+            "printedName": "arrayEncoding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArrayEncoding",
+                "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework11URLEncodingV13arrayEncodingAC05ArrayF0Ovp",
+            "mangledName": "$s20PushServiceFramework11URLEncodingV13arrayEncodingAC05ArrayF0Ovp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArrayEncoding",
+                    "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                    "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework11URLEncodingV13arrayEncodingAC05ArrayF0Ovg",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV13arrayEncodingAC05ArrayF0Ovg",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "boolEncoding",
+            "printedName": "boolEncoding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BoolEncoding",
+                "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20PushServiceFramework11URLEncodingV12boolEncodingAC04BoolF0Ovp",
+            "mangledName": "$s20PushServiceFramework11URLEncodingV12boolEncodingAC04BoolF0Ovp",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoolEncoding",
+                    "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                    "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20PushServiceFramework11URLEncodingV12boolEncodingAC04BoolF0Ovg",
+                "mangledName": "$s20PushServiceFramework11URLEncodingV12boolEncodingAC04BoolF0Ovg",
+                "moduleName": "PushServiceFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(arrayEncoding:boolEncoding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLEncoding",
+                "printedName": "PushServiceFramework.URLEncoding",
+                "usr": "s:20PushServiceFramework11URLEncodingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ArrayEncoding",
+                "printedName": "PushServiceFramework.URLEncoding.ArrayEncoding",
+                "hasDefaultArg": true,
+                "usr": "s:20PushServiceFramework11URLEncodingV13ArrayEncodingO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BoolEncoding",
+                "printedName": "PushServiceFramework.URLEncoding.BoolEncoding",
+                "hasDefaultArg": true,
+                "usr": "s:20PushServiceFramework11URLEncodingV12BoolEncodingO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20PushServiceFramework11URLEncodingV13arrayEncoding04boolF0A2C05ArrayF0O_AC04BoolF0Otcfc",
+            "mangledName": "$s20PushServiceFramework11URLEncodingV13arrayEncoding04boolF0A2C05ArrayF0O_AC04BoolF0Otcfc",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "query",
+            "printedName": "query(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20PushServiceFramework11URLEncodingV5queryySSSDySSypGF",
+            "mangledName": "$s20PushServiceFramework11URLEncodingV5queryySSSDySSypGF",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:20PushServiceFramework11URLEncodingV",
+        "mangledName": "$s20PushServiceFramework11URLEncodingV",
+        "moduleName": "PushServiceFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadData",
+            "printedName": "loadData(with:queue:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PushServiceFramework.Response, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PushServiceFramework.Response, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Response",
+                        "printedName": "PushServiceFramework.Response",
+                        "usr": "s:20PushServiceFramework8ResponseC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC20PushServiceFrameworkE8loadData4with5queue17completionHandlerSo0aF4TaskC10Foundation10URLRequestV_So012OS_dispatch_H0CyAC8ResponseC_s5Error_pSgtctF",
+            "mangledName": "$sSo12NSURLSessionC20PushServiceFrameworkE8loadData4with5queue17completionHandlerSo0aF4TaskC10Foundation10URLRequestV_So012OS_dispatch_H0CyAC8ResponseC_s5Error_pSgtctF",
+            "moduleName": "PushServiceFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkingSession",
+            "printedName": "NetworkingSession",
+            "usr": "s:20PushServiceFramework17NetworkingSessionP",
+            "mangledName": "$s20PushServiceFramework17NetworkingSessionP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIDevice",
+        "printedName": "UIDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "modelName",
+            "printedName": "modelName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIDeviceC20PushServiceFrameworkE9modelNameSSvpZ",
+            "mangledName": "$sSo8UIDeviceC20PushServiceFrameworkE9modelNameSSvpZ",
+            "moduleName": "PushServiceFramework",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIDeviceC20PushServiceFrameworkE9modelNameSSvgZ",
+                "mangledName": "$sSo8UIDeviceC20PushServiceFrameworkE9modelNameSSvgZ",
+                "moduleName": "PushServiceFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIDevice",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIDevice",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 706,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1484,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1514,
+      "length": 12,
+      "value": "\"appVersion\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1552,
+      "length": 15,
+      "value": "\"clientVersion\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1588,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1622,
+      "length": 13,
+      "value": "\"deviceModel\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1658,
+      "length": 12,
+      "value": "\"deviceType\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1690,
+      "length": 9,
+      "value": "\"disable\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1714,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1742,
+      "length": 13,
+      "value": "\"installDate\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1774,
+      "length": 8,
+      "value": "\"locale\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1804,
+      "length": 11,
+      "value": "\"osVersion\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1833,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1863,
+      "length": 12,
+      "value": "\"tokenError\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1894,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1920,
+      "length": 7,
+      "value": "\"guest\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1484,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1514,
+      "length": 12,
+      "value": "\"appVersion\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1552,
+      "length": 15,
+      "value": "\"clientVersion\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1588,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1622,
+      "length": 13,
+      "value": "\"deviceModel\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1658,
+      "length": 12,
+      "value": "\"deviceType\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1690,
+      "length": 9,
+      "value": "\"disable\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1714,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1742,
+      "length": 13,
+      "value": "\"installDate\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1774,
+      "length": 8,
+      "value": "\"locale\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1804,
+      "length": 11,
+      "value": "\"osVersion\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1833,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1863,
+      "length": 12,
+      "value": "\"tokenError\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1894,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 1920,
+      "length": 7,
+      "value": "\"guest\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 2615,
+      "length": 14,
+      "value": "\"deliveryDate\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 2651,
+      "length": 11,
+      "value": "\"messageId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 2688,
+      "length": 15,
+      "value": "\"messageStatus\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 2615,
+      "length": 14,
+      "value": "\"deliveryDate\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 2651,
+      "length": 11,
+      "value": "\"messageId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 2688,
+      "length": 15,
+      "value": "\"messageStatus\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 3574,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 3600,
+      "length": 8,
+      "value": "\"apiKey\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 3574,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Notification.swift",
+      "kind": "StringLiteral",
+      "offset": 3600,
+      "length": 8,
+      "value": "\"apiKey\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 287,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 345,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 287,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 345,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/Network\/Endpoint\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 373,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 459,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 669,
+      "length": 9,
+      "value": "\"iPod5,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 14,
+      "value": "\"iPod Touch 5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 745,
+      "length": 9,
+      "value": "\"iPod7,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 795,
+      "length": 14,
+      "value": "\"iPod Touch 6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 821,
+      "length": 11,
+      "value": "\"iPhone3,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 11,
+      "value": "\"iPhone3,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 847,
+      "length": 11,
+      "value": "\"iPhone3,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 871,
+      "length": 10,
+      "value": "\"iPhone 4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 893,
+      "length": 11,
+      "value": "\"iPhone4,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 943,
+      "length": 11,
+      "value": "\"iPhone 4s\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 966,
+      "length": 11,
+      "value": "\"iPhone5,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 11,
+      "value": "\"iPhone5,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1016,
+      "length": 10,
+      "value": "\"iPhone 5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1038,
+      "length": 11,
+      "value": "\"iPhone5,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1051,
+      "length": 11,
+      "value": "\"iPhone5,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 11,
+      "value": "\"iPhone 5c\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1111,
+      "length": 11,
+      "value": "\"iPhone6,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1124,
+      "length": 11,
+      "value": "\"iPhone6,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1161,
+      "length": 11,
+      "value": "\"iPhone 5s\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1184,
+      "length": 11,
+      "value": "\"iPhone7,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1234,
+      "length": 10,
+      "value": "\"iPhone 6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
+      "length": 11,
+      "value": "\"iPhone7,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1306,
+      "length": 15,
+      "value": "\"iPhone 6 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1333,
+      "length": 11,
+      "value": "\"iPhone8,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1383,
+      "length": 11,
+      "value": "\"iPhone 6s\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1406,
+      "length": 11,
+      "value": "\"iPhone8,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1456,
+      "length": 16,
+      "value": "\"iPhone 6s Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1484,
+      "length": 11,
+      "value": "\"iPhone9,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1497,
+      "length": 11,
+      "value": "\"iPhone9,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1534,
+      "length": 10,
+      "value": "\"iPhone 7\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1556,
+      "length": 11,
+      "value": "\"iPhone9,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1569,
+      "length": 11,
+      "value": "\"iPhone9,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1606,
+      "length": 15,
+      "value": "\"iPhone 7 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1633,
+      "length": 11,
+      "value": "\"iPhone8,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1683,
+      "length": 11,
+      "value": "\"iPhone SE\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1706,
+      "length": 12,
+      "value": "\"iPhone10,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1720,
+      "length": 12,
+      "value": "\"iPhone10,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1756,
+      "length": 10,
+      "value": "\"iPhone 8\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1778,
+      "length": 12,
+      "value": "\"iPhone10,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1792,
+      "length": 12,
+      "value": "\"iPhone10,5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1828,
+      "length": 15,
+      "value": "\"iPhone 8 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1855,
+      "length": 12,
+      "value": "\"iPhone10,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
+      "length": 12,
+      "value": "\"iPhone10,6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
+      "length": 10,
+      "value": "\"iPhone X\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1927,
+      "length": 12,
+      "value": "\"iPhone11,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1977,
+      "length": 11,
+      "value": "\"iPhone XS\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2000,
+      "length": 12,
+      "value": "\"iPhone11,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2014,
+      "length": 12,
+      "value": "\"iPhone11,6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2050,
+      "length": 15,
+      "value": "\"iPhone XS Max\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2077,
+      "length": 12,
+      "value": "\"iPhone11,8\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2127,
+      "length": 11,
+      "value": "\"iPhone XR\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2150,
+      "length": 9,
+      "value": "\"iPad2,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2161,
+      "length": 9,
+      "value": "\"iPad2,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2172,
+      "length": 9,
+      "value": "\"iPad2,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2183,
+      "length": 9,
+      "value": "\"iPad2,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2200,
+      "length": 8,
+      "value": "\"iPad 2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2220,
+      "length": 9,
+      "value": "\"iPad3,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2231,
+      "length": 9,
+      "value": "\"iPad3,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2242,
+      "length": 9,
+      "value": "\"iPad3,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2270,
+      "length": 8,
+      "value": "\"iPad 3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2290,
+      "length": 9,
+      "value": "\"iPad3,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2301,
+      "length": 9,
+      "value": "\"iPad3,5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2312,
+      "length": 9,
+      "value": "\"iPad3,6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2340,
+      "length": 8,
+      "value": "\"iPad 4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2360,
+      "length": 9,
+      "value": "\"iPad4,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2371,
+      "length": 9,
+      "value": "\"iPad4,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2382,
+      "length": 9,
+      "value": "\"iPad4,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2410,
+      "length": 10,
+      "value": "\"iPad Air\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2432,
+      "length": 9,
+      "value": "\"iPad5,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2443,
+      "length": 9,
+      "value": "\"iPad5,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2482,
+      "length": 12,
+      "value": "\"iPad Air 2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2506,
+      "length": 10,
+      "value": "\"iPad6,11\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2518,
+      "length": 10,
+      "value": "\"iPad6,12\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2556,
+      "length": 8,
+      "value": "\"iPad 5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2576,
+      "length": 9,
+      "value": "\"iPad7,5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2587,
+      "length": 9,
+      "value": "\"iPad7,6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2626,
+      "length": 8,
+      "value": "\"iPad 6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2646,
+      "length": 9,
+      "value": "\"iPad2,5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2657,
+      "length": 9,
+      "value": "\"iPad2,6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2668,
+      "length": 9,
+      "value": "\"iPad2,7\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2696,
+      "length": 11,
+      "value": "\"iPad Mini\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2719,
+      "length": 9,
+      "value": "\"iPad4,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2730,
+      "length": 9,
+      "value": "\"iPad4,5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2741,
+      "length": 9,
+      "value": "\"iPad4,6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2769,
+      "length": 13,
+      "value": "\"iPad Mini 2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2794,
+      "length": 9,
+      "value": "\"iPad4,7\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2805,
+      "length": 9,
+      "value": "\"iPad4,8\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2816,
+      "length": 9,
+      "value": "\"iPad4,9\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2844,
+      "length": 13,
+      "value": "\"iPad Mini 3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2869,
+      "length": 9,
+      "value": "\"iPad5,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2880,
+      "length": 9,
+      "value": "\"iPad5,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2919,
+      "length": 13,
+      "value": "\"iPad Mini 4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2944,
+      "length": 9,
+      "value": "\"iPad6,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2955,
+      "length": 9,
+      "value": "\"iPad6,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2994,
+      "length": 21,
+      "value": "\"iPad Pro (9.7-inch)\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3027,
+      "length": 9,
+      "value": "\"iPad6,7\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3038,
+      "length": 9,
+      "value": "\"iPad6,8\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3077,
+      "length": 22,
+      "value": "\"iPad Pro (12.9-inch)\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3111,
+      "length": 9,
+      "value": "\"iPad7,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3122,
+      "length": 9,
+      "value": "\"iPad7,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3161,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3212,
+      "length": 9,
+      "value": "\"iPad7,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3223,
+      "length": 9,
+      "value": "\"iPad7,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3262,
+      "length": 22,
+      "value": "\"iPad Pro (10.5-inch)\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3296,
+      "length": 9,
+      "value": "\"iPad8,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3307,
+      "length": 9,
+      "value": "\"iPad8,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3318,
+      "length": 9,
+      "value": "\"iPad8,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3329,
+      "length": 9,
+      "value": "\"iPad8,4\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3346,
+      "length": 20,
+      "value": "\"iPad Pro (11-inch)\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3378,
+      "length": 9,
+      "value": "\"iPad8,5\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3389,
+      "length": 9,
+      "value": "\"iPad8,6\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3400,
+      "length": 9,
+      "value": "\"iPad8,7\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3411,
+      "length": 9,
+      "value": "\"iPad8,8\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3428,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3479,
+      "length": 12,
+      "value": "\"AppleTV5,3\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3529,
+      "length": 10,
+      "value": "\"Apple TV\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3551,
+      "length": 12,
+      "value": "\"AppleTV6,2\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3601,
+      "length": 13,
+      "value": "\"Apple TV 4K\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3626,
+      "length": 19,
+      "value": "\"AudioAccessory1,1\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3676,
+      "length": 9,
+      "value": "\"HomePod\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3697,
+      "length": 6,
+      "value": "\"i386\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3705,
+      "length": 8,
+      "value": "\"x86_64\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3747,
+      "length": 104,
+      "value": "\"Simulator \""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3810,
+      "length": 28,
+      "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3843,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/hsm\/Developer\/PushServiceFramework\/PushServiceFramework\/extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3850,
+      "length": 1,
+      "value": "\"\""
+    }
+  ]
+}

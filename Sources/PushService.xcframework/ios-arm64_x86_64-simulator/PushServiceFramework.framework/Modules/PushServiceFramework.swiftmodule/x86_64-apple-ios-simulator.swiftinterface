@@ -1,0 +1,128 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios13.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PushServiceFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Firebase
+import FirebaseMessaging
+import Foundation
+@_exported import PushServiceFramework
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+open class Network<R> : PushServiceFramework.NetworkingType where R : PushServiceFramework.Service {
+  public init()
+  @discardableResult
+  public func request(service: R, session: PushServiceFramework.NetworkingSession = URLSession.shared, queue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PushServiceFramework.Response, PushServiceFramework.NetworkingError>) -> Swift.Void) -> Foundation.URLSessionDataTask
+  public typealias Service = R
+  @objc deinit
+}
+public enum NetworkingError : Swift.Error {
+  case noData(PushServiceFramework.Response)
+  case statusCode(PushServiceFramework.Response)
+  case decoding(Swift.Error, PushServiceFramework.Response)
+  case underlying(Swift.Error, PushServiceFramework.Response?)
+}
+extension PushServiceFramework.NetworkingError {
+  public var response: PushServiceFramework.Response? {
+    get
+  }
+}
+extension PushServiceFramework.NetworkingError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum Endpoint {
+  case get(path: Swift.String)
+  case post(path: Swift.String)
+  case put(path: Swift.String)
+  case delete(path: Swift.String)
+}
+final public class Response : Swift.CustomDebugStringConvertible {
+  final public let urlRequest: Foundation.URLRequest
+  final public let data: Foundation.Data?
+  final public let httpURLResponse: Foundation.HTTPURLResponse?
+  final public var description: Swift.String {
+    get
+  }
+  public init(urlRequest: Foundation.URLRequest, data: Foundation.Data?, httpURLResponse: Foundation.HTTPURLResponse?)
+  final public var debugDescription: Swift.String {
+    get
+  }
+  final public var prettyJSONString: Foundation.NSString? {
+    get
+  }
+  final public var json: Any? {
+    get
+  }
+  final public func map<D>(to type: D.Type, decoder: Foundation.JSONDecoder = JSONDecoder()) throws -> D where D : Swift.Decodable
+  @objc deinit
+}
+public protocol NetworkingSession {
+  typealias CompletionHandler = (PushServiceFramework.Response, Swift.Error?) -> Swift.Void
+  func loadData(with urlRequest: Foundation.URLRequest, queue: Dispatch.DispatchQueue, completionHandler: @escaping Self.CompletionHandler) -> Foundation.URLSessionDataTask
+}
+extension Foundation.URLSession : PushServiceFramework.NetworkingSession {
+  public func loadData(with urlRequest: Foundation.URLRequest, queue: Dispatch.DispatchQueue, completionHandler: @escaping (PushServiceFramework.Response, Swift.Error?) -> Swift.Void) -> Foundation.URLSessionDataTask
+}
+public protocol Service {
+  var baseURL: Foundation.URL { get }
+  var endpoint: PushServiceFramework.Endpoint { get }
+  var task: PushServiceFramework.Task { get }
+  var headers: [Swift.String : Swift.String] { get }
+  var cachePolicy: Foundation.URLRequest.CachePolicy { get }
+}
+@_hasMissingDesignatedInitializers public class PushServices {
+  public static func inital(appId: Swift.String, apiKey: Swift.String, _clientVersion: Swift.String)
+  public static func updateVersion(version: Swift.String)
+  public static func updateUserId(userId: Swift.String)
+  public static func disable(disable: Swift.Bool)
+  public static func updateToken(token: Foundation.Data)
+  public static func errorToken(error: Swift.String)
+  public static func logout()
+  public static func sendDevlivery(messageId: Swift.String)
+  @objc deinit
+}
+public protocol NetworkingType {
+  associatedtype Service
+  func request(service: Self.Service, session: PushServiceFramework.NetworkingSession, queue: Dispatch.DispatchQueue, completion: @escaping (Swift.Result<PushServiceFramework.Response, PushServiceFramework.NetworkingError>) -> Swift.Void) -> Foundation.URLSessionDataTask
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+public enum Task {
+  case requestWithParameters([Swift.String : Any], encoding: PushServiceFramework.URLEncoding)
+  case requestWithEncodable(Swift.Encodable)
+}
+public struct URLEncoding {
+  public enum ArrayEncoding {
+    case brackets
+    case noBrackets
+    public func encode(key: Swift.String) -> Swift.String
+    public static func == (a: PushServiceFramework.URLEncoding.ArrayEncoding, b: PushServiceFramework.URLEncoding.ArrayEncoding) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum BoolEncoding {
+    case numeric
+    case literal
+    public func encode(flag: Swift.Bool) -> Swift.String
+    public static func == (a: PushServiceFramework.URLEncoding.BoolEncoding, b: PushServiceFramework.URLEncoding.BoolEncoding) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let arrayEncoding: PushServiceFramework.URLEncoding.ArrayEncoding
+  public let boolEncoding: PushServiceFramework.URLEncoding.BoolEncoding
+  public init(arrayEncoding: PushServiceFramework.URLEncoding.ArrayEncoding = .brackets, boolEncoding: PushServiceFramework.URLEncoding.BoolEncoding = .literal)
+  public func query(_ parameters: [Swift.String : Any]) -> Swift.String
+}
+extension PushServiceFramework.URLEncoding.ArrayEncoding : Swift.Equatable {}
+extension PushServiceFramework.URLEncoding.ArrayEncoding : Swift.Hashable {}
+extension PushServiceFramework.URLEncoding.BoolEncoding : Swift.Equatable {}
+extension PushServiceFramework.URLEncoding.BoolEncoding : Swift.Hashable {}

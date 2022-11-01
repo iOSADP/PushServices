@@ -1,0 +1,11 @@
+framework module PushServiceFramework {
+  umbrella header "PushServiceFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module PushServiceFramework.Swift {
+  header "PushServiceFramework-Swift.h"
+  requires objc
+}
